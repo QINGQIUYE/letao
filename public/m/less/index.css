@@ -1,0 +1,231 @@
+body {
+  height: 100vh;
+  padding-top: .45rem;
+  padding-bottom: .45rem;
+}
+#header {
+  position: fixed;
+  color: #fff;
+  display: flex;
+  padding-left: .45rem;
+  padding-right: .45rem;
+  background-color: #006699;
+  z-index: 999;
+}
+#header h4 {
+  margin: 0;
+  width: 100vw;
+  text-align: center;
+  line-height: .45rem;
+}
+#header a {
+  color: #fff;
+  width: .45rem;
+  text-align: center;
+  line-height: .45rem;
+  position: absolute;
+  right: 0;
+}
+li {
+  list-style: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+}
+#footer {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  height: .45rem;
+  background-color: #006699;
+  display: flex;
+}
+#footer ul {
+  text-align: center;
+  display: flex;
+}
+#footer ul li {
+  width: 25vw;
+}
+#footer ul li a {
+  color: #fff;
+  display: block;
+  padding: 0.085rem;
+  height: .45rem;
+}
+#footer ul li a p {
+  margin: 0;
+  color: #fff;
+}
+#main {
+  position: relative;
+  height: 100%;
+  padding-top: .45rem;
+  padding-bottom: .45rem;
+}
+#nav ul {
+  display: flex;
+  padding: .1rem;
+  flex-wrap: wrap;
+}
+#nav ul li {
+  width: 33.333%;
+}
+#nav ul li img {
+  vertical-align: middle;
+  width: 100%;
+}
+#banner {
+  font-size: 0;
+  vertical-align: middle;
+  width: 100vw;
+  display: flex;
+  height: 2.4rem;
+}
+#banner .left {
+  flex: 2;
+}
+#banner .left a {
+  display: flex;
+}
+#banner .left a img {
+  height: 1.2rem;
+  width: 50%;
+}
+#banner .right {
+  flex: 1;
+}
+#banner .right a {
+  display: block;
+}
+#banner .right a img {
+  height: 2.4rem;
+  width: 100%;
+}
+#brand {
+  padding: .1rem;
+}
+#brand .title img {
+  width: 100%;
+}
+#brand ul {
+  font-size: 0;
+  flex-wrap: wrap;
+  display: flex;
+}
+#brand ul li {
+  width: .8875rem;
+}
+#brand ul li img {
+  width: 100%;
+  height: .4575rem;
+}
+#sport {
+  padding: .1rem;
+}
+#sport .title1 img {
+  width: 100%;
+}
+#sport .conten {
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+}
+#sport .conten .left {
+  box-shadow: 0px 0px .01rem #ccc;
+  width: 50vw;
+}
+#sport .conten .left img {
+  height: 1.765rem;
+}
+#sport .conten .left button {
+  background-color: #007aff;
+  color: #fff;
+  border: .01rem #007aff solid;
+}
+#sport .conten .right {
+  box-shadow: 0px 0px .01rem #ccc;
+  width: 50vw;
+}
+#sport .conten .right img {
+  height: 1.765rem;
+}
+#sport .conten .right button {
+  background-color: #007aff;
+  color: #fff;
+  border: .01rem #007aff solid;
+}
+#women {
+  padding: .1rem;
+}
+#women .title1 img {
+  width: 100%;
+}
+#women .conten {
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+}
+#women .conten .left {
+  box-shadow: 0px 0px .01rem #ccc;
+  width: 50vw;
+}
+#women .conten .left img {
+  height: 1.765rem;
+}
+#women .conten .left button {
+  background-color: #007aff;
+  color: #fff;
+  border: .01rem #007aff solid;
+}
+#women .conten .right {
+  box-shadow: 0px 0px .01rem #ccc;
+  width: 50vw;
+}
+#women .conten .right img {
+  height: 1.765rem;
+}
+#women .conten .right button {
+  background-color: #007aff;
+  color: #fff;
+  border: .01rem #007aff solid;
+}
+#men {
+  padding: .1rem;
+}
+#men .title1 img {
+  width: 100%;
+}
+#men .conten {
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+}
+#men .conten .left {
+  box-shadow: 0px 0px .01rem #ccc;
+  width: 50vw;
+}
+#men .conten .left img {
+  height: 1.765rem;
+}
+#men .conten .left button {
+  background-color: #007aff;
+  color: #fff;
+  border: .01rem #007aff solid;
+}
+#men .conten .right {
+  box-shadow: 0px 0px .01rem #ccc;
+  width: 50vw;
+}
+#men .conten .right img {
+  height: 1.765rem;
+}
+#men .conten .right button {
+  background-color: #007aff;
+  color: #fff;
+  border: .01rem #007aff solid;
+}
