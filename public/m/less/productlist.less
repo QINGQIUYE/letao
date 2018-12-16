@@ -1,0 +1,79 @@
+@import "base.less";
+body{
+  background-color: #fff;
+}
+#header{
+  h4{
+    font-weight: 400;
+  }
+  a{
+    left: 0;
+  }
+}
+#main{
+  .form-search{
+    display: flex;
+    padding: .1rem;
+    input{
+      flex: 1;
+      text-align: left;
+      margin: 0;
+      background-color: #fff;
+      border: .01rem solid #006699;
+      font-size: 0.14rem;
+      border-radius: 0.06rem 0 0 0.06rem;
+    }
+    button{
+      background-color: #006699;
+      color: #fff;
+      width: .6rem;
+      border-radius: 0 0.06rem 0.06rem 0;
+    }
+  }
+    .title{
+      font-size: .14rem;
+      ul{
+        background-color: #eee;
+        height: .3rem;
+        line-height: .3rem;
+        text-align: center;
+        display: flex;
+        width: 100vw; 
+        li{
+          width: 25%;
+          a{
+            &.active{
+              color: red;
+            }
+            display: block;
+            color: #666;
+          
+          }
+        }
+      }
+    }
+    .conten{
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      .product {
+        padding: 0 .05rem;
+        margin-top: .1rem;
+        width: 50%;
+        a{
+          box-shadow: 0px 0px 1px #ccc;
+          padding: .1rem 0;
+          display: block;
+          img{
+            width: 100%;
+          }
+          button{
+            background-color: #007aff;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+  }
+#footer{}

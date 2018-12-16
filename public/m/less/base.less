@@ -30,6 +30,12 @@ body{
         right: 0;
     }
 }
+#main {
+    /* 继承body内容的高度 */
+    height: 100%;
+    /* 给main设置相对定位 以为MUI区域滚动的容器设置了绝对定位 */
+    position: relative;
+}
 li{
     list-style: none;
 }
@@ -41,8 +47,9 @@ img{
     vertical-align: middle;
 }
 #footer{
+    width: 100vw;
     position: fixed;
-    z-index: 999;
+    // z-index: 999;
     bottom: 0;
     height: .45rem;
     background-color: #006699;

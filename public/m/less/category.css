@@ -1,0 +1,138 @@
+body {
+  height: 100vh;
+  padding-top: .45rem;
+  padding-bottom: .45rem;
+}
+#header {
+  width: 100vw;
+  position: fixed;
+  color: #fff;
+  display: flex;
+  padding-left: .45rem;
+  padding-right: .45rem;
+  background-color: #006699;
+  top: 0;
+  z-index: 999;
+  left: 0;
+}
+#header h4 {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  line-height: .45rem;
+}
+#header a {
+  color: #fff;
+  width: .45rem;
+  text-align: center;
+  line-height: .45rem;
+  position: absolute;
+  right: 0;
+}
+li {
+  list-style: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+}
+#footer {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  height: .45rem;
+  background-color: #006699;
+  display: flex;
+}
+#footer ul {
+  text-align: center;
+  display: flex;
+}
+#footer ul li {
+  width: 25vw;
+}
+#footer ul li a {
+  color: #fff;
+  display: block;
+  padding: 0.085rem;
+  height: .45rem;
+}
+#footer ul li a p {
+  margin: 0;
+  color: #fff;
+}
+body {
+  background-color: #cccccc;
+}
+#header {
+  height: .45rem;
+  padding-top: .05rem;
+}
+#header a {
+  top: 0;
+}
+#header a:first-of-type {
+  left: 0;
+}
+#header a:last-of-type {
+  right: 0;
+}
+#header input {
+  text-align: left;
+  background-color: #fff;
+  margin: 0;
+  font-size: .14rem;
+}
+#main {
+  display: flex;
+  height: 100%;
+}
+#main .category-left {
+  position: relative;
+  width: .8rem;
+}
+#main .category-left ul {
+  min-height: 5.78rem;
+}
+#main .category-left ul li {
+  background-color: #fff;
+  text-align: center;
+  height: .45rem;
+  line-height: .45rem;
+}
+#main .category-left ul li.active {
+  background-color: #ccc;
+}
+#main .category-left ul li a {
+  display: block;
+  height: .45rem;
+  padding: 0;
+  font-size: .14rem;
+  color: #666;
+}
+#main .category-left ul li a img {
+  width: 100%;
+}
+#main .category-right {
+  position: relative;
+  flex: 1;
+}
+#main .category-right ul {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#main .category-right ul li {
+  text-align: center;
+  width: 33.33%;
+}
+#main .category-right ul li a img {
+  width: 100%;
+}
+#main .category-right ul li a p {
+  background-color: #fff;
+}

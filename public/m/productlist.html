@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的乐淘商品列表</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet/less" href="./less/productlist.less">
+    <script src="./lib/less/less.js"></script>
+    <script src="./js/rem.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <a href="javascript:history.back();" class="fa fa-arrow-left"></a>
+        <h4>搜索中心</h4>
+
+    </header>
+    <main id="main">
+        <form action="#" class="form-search">
+            <input type="search" class="input-search" name="" placeholder="请输入要搜索的商品">
+            <button type="button" class="mui-btn mui-btn-primary btn-search">搜索</button>
+        </form>
+        <div class="title">
+            <ul>
+                <li>
+                    <a href="#" class="active">
+                        <span>上架时间</span><i class="fa fa-angle-down"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>价格</span><i class="fa fa-angle-down"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>销量</span><i class="fa fa-angle-down"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>折扣</span><i class="fa fa-angle-down"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="conten">
+            <div class="product">
+                <a href="#">
+                    <img src="./images/product.jpg" alt="">
+                    <p>adidas阿迪达斯男式场下休闲篮球鞋S83700</p>
+                    <p><span>¥566.00</span> <del>¥888.00</del></p>
+                    <button>立即购买</button>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <ul>
+            <li>
+                <a href="index.html" class="fa fa-home active">
+
+                    <p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="category.html" class="fa fa-bars">
+
+                    <p>分类</p>
+                </a>
+            </li>
+            <li>
+                <a href="cart.html" class="fa fa-shopping-cart">
+
+                    <p>购物车</p>
+                </a>
+            </li>
+            <li>
+                <a href="user.html" class="fa fa-user">
+
+                    <p>个人中心</p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script id="productListTpl" type="text/html">
+        {{each  data value }}
+        <div class="product">
+                <a href="#">
+                    <img src="{{value.pic[0].picAddr}}" alt="">
+                    <p>{{value.proName}}</p>
+                    <p><span>¥{{value.price}}</span> <del>¥{{value.oldPrice}}</del></p>
+                    <button>立即购买</button>
+                </a>
+            </div>
+        {{/each}}
+    </script>
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/mui/js/mui.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- <script src="./lib/artTemplate/template.js"></script>
+     <script src="./lib/artTemplate/template-native.js"></script> -->
+    <script src="./js/productlist.js"></script>
+</body>
+
+</html>
