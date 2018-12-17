@@ -29,12 +29,34 @@ body{
         position: absolute;
         right: 0;
     }
+    // a:nth-of-type(1){
+    //     left: 0;
+    // }
 }
 #main {
     /* 继承body内容的高度 */
     height: 100%;
     /* 给main设置相对定位 以为MUI区域滚动的容器设置了绝对定位 */
     position: relative;
+    .form-search{
+        display: flex;
+        padding: .1rem;
+        input{
+          flex: 1;
+          text-align: left;
+          margin: 0;
+          background-color: #fff;
+          border: .01rem solid #006699;
+          font-size: 0.14rem;
+          border-radius: 0.06rem 0 0 0.06rem;
+        }
+        button{
+          background-color: #006699;
+          color: #fff;
+          width: .6rem;
+          border-radius: 0 0.06rem 0.06rem 0;
+        }
+      }
 }
 li{
     list-style: none;

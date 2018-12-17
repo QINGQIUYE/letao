@@ -90,55 +90,62 @@ img {
   color: #fff;
 }
 body {
-  background-color: #fff;
+  /* 由于购物车底部多加了一个订单 固定定位 中间main再减少订单高度 30px */
+  padding-bottom: 0.75rem;
 }
-#header h4 {
-  font-weight: 400;
-}
-#header a {
+/* 中间主体样式 */
+#header a:nth-of-type(1) {
   left: 0;
 }
-#main .title {
-  font-size: .14rem;
+#main .mui-media .mui-pull-left.mui-checkbox .mui-media-object {
+  line-height: 0.8rem;
+  height: 0.8rem;
+  max-width: 0.8rem;
 }
-#main .title ul {
-  background-color: #eee;
-  height: .3rem;
-  line-height: .3rem;
-  text-align: center;
-  display: flex;
-  width: 100vw;
-}
-#main .title ul li {
-  width: 25%;
-}
-#main .title ul li.active a {
-  color: red;
-}
-#main .title ul li a {
+#main .mui-media .mui-pull-left.mui-checkbox input {
+  /* 取消定位 */
+  position: static;
   display: block;
+  margin: 0 auto;
+}
+#main .mui-media .mui-pull-left.mui-checkbox input::before {
+  color: hotpink;
+}
+#main .mui-media .mui-media-body {
+  line-height: 0.36rem;
+}
+#main .mui-media .mui-media-body .product-name {
+  /* MUI默认设置强制不换行的属性 去掉强制不换行属性 */
+  white-space: normal;
   color: #666;
+  line-height: 0.2rem;
 }
-#main .conten {
+#main .mui-media .mui-media-body .product-price span {
+  color: red;
+  font-weight: 600;
+}
+#main .mui-media .mui-media-body .product-price del {
+  color: #ccc;
+}
+#main .mui-media .mui-media-body .product-params {
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+  /* 两端对齐 */
+  justify-content: space-between;
 }
-#main .conten .product {
-  padding: 0 .05rem;
-  margin-top: .1rem;
-  width: 50%;
-}
-#main .conten .product a {
-  box-shadow: 0px 0px 1px #ccc;
-  padding: .1rem 0;
-  display: block;
-}
-#main .conten .product a img {
+/* 订单区域样式 */
+#order {
+  position: fixed;
+  background-color: #fff;
+  bottom: 0.45rem;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+  height: 0.3rem;
 }
-#main .conten .product a .text {
-  display: -webkit-box;
-  height: .63rem;
-  overflow: hidden;
+#order .order-total {
+  padding-left: 0.1rem;
+  line-height: 0.3rem;
+  font-weight: 600;
+  color: red;
 }

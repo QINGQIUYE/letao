@@ -90,55 +90,47 @@ img {
   color: #fff;
 }
 body {
-  background-color: #fff;
-}
-#header h4 {
-  font-weight: 400;
-}
-#header a {
-  left: 0;
-}
-#main .title {
   font-size: .14rem;
 }
-#main .title ul {
-  background-color: #eee;
-  height: .3rem;
-  line-height: .3rem;
-  text-align: center;
-  display: flex;
-  width: 100vw;
+#header a:nth-of-type(1) {
+  left: 0;
 }
-#main .title ul li {
-  width: 25%;
+#main {
+  height: 100%;
 }
-#main .title ul li.active a {
+#main #productInfo ul .proName {
+  font-weight: 600;
+  padding: 10px;
+}
+#main #productInfo ul .Price span {
+  font-weight: 600;
   color: red;
 }
-#main .title ul li a {
-  display: block;
-  color: #666;
+#main #productInfo ul .size .btn-size {
+  margin-top: .05rem;
 }
-#main .conten {
+#main #productInfo ul .size .btn-size.active {
+  background-color: chocolate;
+  color: #fff;
+}
+#footer {
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+  background-color: #ccc;
 }
-#main .conten .product {
-  padding: 0 .05rem;
-  margin-top: .1rem;
-  width: 50%;
-}
-#main .conten .product a {
-  box-shadow: 0px 0px 1px #ccc;
-  padding: .1rem 0;
+#footer a {
   display: block;
+  width: 16.667%;
+  padding: .05rem;
+  font-size: .20rem;
+  line-height: .35rem;
+  text-align: center;
+  color: black;
 }
-#main .conten .product a img {
-  width: 100%;
+#footer button {
+  margin-top: .07rem;
+  width: 40%;
+  height: .3rem;
 }
-#main .conten .product a .text {
-  display: -webkit-box;
-  height: .63rem;
-  overflow: hidden;
+#footer button:nth-of-type(1) {
+  margin-right: .1rem;
 }

@@ -89,56 +89,17 @@ img {
   margin: 0;
   color: #fff;
 }
-body {
-  background-color: #fff;
-}
-#header h4 {
-  font-weight: 400;
-}
-#header a {
+#header a:nth-of-type(1) {
   left: 0;
 }
-#main .title {
-  font-size: .14rem;
+#main .btn-get-vcode {
+  width: 1rem;
+  position: absolute;
+  right: 0;
 }
-#main .title ul {
-  background-color: #eee;
-  height: .3rem;
-  line-height: .3rem;
-  text-align: center;
-  display: flex;
-  width: 100vw;
+#main .mui-button-row {
+  padding: 5px;
 }
-#main .title ul li {
-  width: 25%;
-}
-#main .title ul li.active a {
-  color: red;
-}
-#main .title ul li a {
-  display: block;
-  color: #666;
-}
-#main .conten {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
-#main .conten .product {
-  padding: 0 .05rem;
-  margin-top: .1rem;
-  width: 50%;
-}
-#main .conten .product a {
-  box-shadow: 0px 0px 1px #ccc;
-  padding: .1rem 0;
-  display: block;
-}
-#main .conten .product a img {
+#main .mui-btn-primary.btn-register {
   width: 100%;
-}
-#main .conten .product a .text {
-  display: -webkit-box;
-  height: .63rem;
-  overflow: hidden;
 }

@@ -11,25 +11,7 @@ body{
   }
 }
 #main{
-  .form-search{
-    display: flex;
-    padding: .1rem;
-    input{
-      flex: 1;
-      text-align: left;
-      margin: 0;
-      background-color: #fff;
-      border: .01rem solid #006699;
-      font-size: 0.14rem;
-      border-radius: 0.06rem 0 0 0.06rem;
-    }
-    button{
-      background-color: #006699;
-      color: #fff;
-      width: .6rem;
-      border-radius: 0 0.06rem 0.06rem 0;
-    }
-  }
+
     .title{
       font-size: .14rem;
       ul{
@@ -41,13 +23,14 @@ body{
         width: 100vw; 
         li{
           width: 25%;
-          a{
-            &.active{
+          &.active{
+            a{
               color: red;
             }
+          }
+          a{
             display: block;
             color: #666;
-          
           }
         }
       }
@@ -67,9 +50,16 @@ body{
           img{
             width: 100%;
           }
-          button{
-            background-color: #007aff;
-            color: #fff;
+          // button{
+          //   background-color: #007aff;
+          //   color: #fff;
+          // }
+          .text{
+            display: -webkit-box;
+            // -webkit-box-orient
+            height: .63rem;
+            // text-overflow:ellipsis;
+            overflow: hidden;
           }
         }
       }
