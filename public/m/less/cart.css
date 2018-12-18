@@ -149,3 +149,13 @@ body {
   font-weight: 600;
   color: red;
 }
+/* 确认框动态弹出来在页面最上面的不是谁的子元素 */
+.product-size {
+  line-height: 0.38rem;
+}
+.product-size .btn-size {
+  margin-top: 0.05rem;
+}
+.product-size .btn-size.active {
+  background-color: orange;
+}

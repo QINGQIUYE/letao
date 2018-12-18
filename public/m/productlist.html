@@ -52,12 +52,12 @@
         </div>
         <div class="conten">
             <div class="product">
-                <a href="#">
+                
                     <img src="./images/product.jpg" alt="">
                     <p class="text">adidas阿迪达斯男式场下休闲篮球鞋S83700</p>
                     <p><span>¥566.00</span> <del>¥888.00</del></p>
                     <button>立即购买</button>
-                </a>
+               
             </div>
         </div>
         <ul class="mui-table-view mui-table-view-chevron">
@@ -96,12 +96,12 @@
     <script id="productListTpl" type="text/html">
         {{each  data value }}
         <div class="product">
-                <a href="#">
+               
                     <img src="{{value.pic[0].picAddr}}" alt="">
                     <p class="text">{{value.proName}}</p>
                     <p><span>¥{{value.price}}</span> <del>¥{{value.oldPrice}}</del></p>
                     <button  type="button"class="mui-btn mui-btn-primary btn-buy" data-id="{{value.id}}">立即购买{{value.num}}</button>
-                </a>
+               
             </div>
         {{/each}}
     </script>

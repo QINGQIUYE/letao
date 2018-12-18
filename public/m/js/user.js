@@ -9,15 +9,13 @@ $(function(){
                     location = 'login.html?returnUrl='+location.href;
                 }
             }
-        });
-    })
+        })
+    });
     $.ajax({
-       
-        url: "/user/queryUserMessage",
+        url: '/user/queryUserMessage',
         success: function (data) {
             console.log(data);
-            
-           if (date.error) {
+           if (data.error) {
             location = 'login.html?returnUrl='+location.href;
            } else{
             $('.username').html(data.username);
@@ -25,4 +23,7 @@ $(function(){
            }
         }
     });
+    $('.cart').on('tap',function(){
+        location="cart.html";
+    })
 })
